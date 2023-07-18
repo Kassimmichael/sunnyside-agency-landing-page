@@ -218,15 +218,69 @@ img {
 .graphicText {
   text-align: center;
   font-size: 1.5rem;
-  color: ;
+  color: #25564b;
+  padding: 0vw 12vw;
 }
 
-.heading-tertiary__graphic {
-
+.photographyText {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #19536b;
+  padding: 0vw 12vw;
 }
 
+.graphic-textBox {
+  margin-top: -12rem;
+  opacity: 0;
+}
+
+.photography-textBox {
+  margin-top: -12rem;
+  opacity: 0;
+}
+
+.section-projects__photo--1:hover + .graphic-textBox {
+  transition: all .2s;
+  opacity: 1;
+  transform: translateY(-8rem);
+}
+
+.section-projects__photo--2:hover + .photography-textBox {
+  transition: all .2s;
+  opacity: 1;
+  transform: translateY(-8rem);
+}
 
 /* projects sections ends */
+
+/* testimonials section starts */
+.section-testimonials {
+  margin: 10rem 0;
+  height: 60vh;
+}
+
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  grid-gap: .1rem;
+}
+
+.testimonials__clients--1, .testimonials__clients--2, .testimonials__clients--3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials__clients--1-photo, .testimonials__clients--2-photo, .testimonials__clients--3-photo {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+
+
+/* testimonials section ends */
 
 
 
